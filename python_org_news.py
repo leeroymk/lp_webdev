@@ -20,11 +20,11 @@ def get_python_news():
             title = news.find('a').text
             url = news.find('a')['href']
             published = news.find('time').text
-            result_news = {
+            result_news.append({
                 'title': title,
                 'url': url,
                 'published': published,
-            }
+            })
         print(result_news['title'])
         return result_news
     return False
