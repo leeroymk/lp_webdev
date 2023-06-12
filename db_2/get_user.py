@@ -1,4 +1,4 @@
-from models import User
+from db.models import User
 
 user = User.query.first()
 print(f'''Имя: {user.name},
