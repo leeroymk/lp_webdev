@@ -1,6 +1,0 @@
-from db.db import db_session
-from db.models import User
-
-first_user = User(name='Maria Sidorova', salary=200, email='mary@example.com')
-db_session.add(first_user)
-db_session.commit()
